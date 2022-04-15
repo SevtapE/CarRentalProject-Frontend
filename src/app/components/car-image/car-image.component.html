@@ -1,1 +1,45 @@
-<p>car-image works!</p>
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-sm-4" *ngFor="let carImage of carImages" >
+
+        <div class="card" >
+          <img [src]= "setCurrentCarImage(carImage.imagePath)" height="120" weight="auto"  class="card-img-top" alt="Resim yüklenemedi">
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+</div>
+
+<!--
+
+
+
+  <tr (click)="setCurrentCarImage(carImage)"  routerLink="/carimages/car/{{carImage.carId}}/carimage/{{carImage.id}}" *ngFor="let carImage of carImages">
+    <td>{{ carImage.id }}</td>
+    <td>{{ carImage.carId }}</td>
+    <td>{{ carImage.date }}</td>
+  </tr>
+</table>
+
+<img [src]= "getCurrentCarImageSource()" width="200" height="200" *ngIf="currentCarImage" class="img-thumbnail" alt="Resim yüklenemedi">
+
+
+
+<div *ngFor="let carImage of carImages" class="card-group" >
+  <div class="card" >
+    <img  [src]= "getCurrentCarImageSource()" class="card-img-top" alt="Resim Yüklenemedi">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+
+  </div>
+</div>
+
+</div>-->

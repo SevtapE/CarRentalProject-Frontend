@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+
+  <table class="table">
+    <thead>
+      <tr>
+
+        <td>Car Name</td>
+        <td>Brand Name</td>
+        <td>Color Name</td>
+        <td>Model Year</td>
+        <td>Daily Price</td>
+      </tr>
+    </thead>
+
+    <!-- routerLink="/cardetails/car/{{carDetail.carId}}" -->
+    <tr>
+
+      <td>{{ carDetail.carName }}</td>
+      <td>{{ carDetail.brandName }}</td>
+      <td>{{ carDetail.colorName }}</td>
+      <td>{{ carDetail.modelYear }}</td>
+      <td>{{ carDetail.dailyPrice }}</td>
+    </tr>
+  </table>
+  </div>
+  <div class="row">
+
+
+    <app-car-image></app-car-image>
+
+
+  </div>
+
+
+
+
+</div>
